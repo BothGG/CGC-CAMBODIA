@@ -1,0 +1,146 @@
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body{
+      height: 200px;
+    }
+    header{
+      width: 100%;
+      height: 60px;
+    }
+    .h{
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      padding: 10px;
+      margin-left: 10px;
+      color: white; 
+    }
+    body {
+    background-color: whitesmoke;
+    }
+    .btn-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .btn {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+    }
+    /* Shared Button Styles */
+    button {
+      background: transparent;
+      position: relative;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      font-size: 17px;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+      border: 1px solid;
+      border-radius: 25px;
+      outline: none;
+      overflow: hidden;
+      color: inherit;
+      transition: color 0.3s 0.1s ease-out;
+      text-align: center;
+      width: 100%;
+      top: 20px;
+    }
+    button svg {
+      height: 25px;
+      width: 25px;
+      fill: currentColor;
+    }
+
+    button span {
+      margin: 10px;
+    }
+
+    button::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      margin: auto;
+      border-radius: 50%;
+      display: block;
+      width: 20em;
+      height: 20em;
+      left: -5em;
+      z-index: -1;
+      transition: box-shadow 0.5s ease-out;
+    }
+
+    button:hover::before {
+      box-shadow: inset 0 0 0 10em currentColor;
+    }
+
+    button:hover {
+      color: white;
+      background-color: #1877F2;
+      transition: 0.5s;
+    }
+
+    /* Brand Specific Colors */
+    .telegram {
+      color: #2AABE2;
+      border-color: #2AABE2;
+    }
+     .telegram:hover{
+        color: white;
+        background-color: #2AABE2;
+     }
+
+    .facebook {
+      color: #1877F2;
+      border-color: #1877F2;
+    }
+
+    .wechat {
+      color: #7BB32E;
+      border-color: #7BB32E;
+    }
+    .wechat:hover{
+        color: #ffffff;
+        background-color: #7BB32E;
+    }
+     body {
+      margin: 0;
+      padding: 0;
+      background: #f0f0f0;
+      font-family: Arial, sans-serif;
+    }
+
+    .scrolling-header-wrapper {
+      width: 100%;
+      overflow: hidden;
+      background: #333;
+      color: white;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      border-bottom: 2px solid #555;
+    }
+
+    .scrolling-header {
+      white-space: nowrap;
+      display: inline-block;
+      padding-left: 100%;
+      animation: scroll-left 15s linear infinite;
+    }
+
+    @keyframes scroll-left {
+      0% {
+        transform: translateX(0%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+    .footer-container{
+      margin-top: 30px;
+    }
